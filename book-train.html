@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Train</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="./css/datetran.css" rel="stylesheet">  
+</head>
+<body>
+<div class="body-train">
+  <button onclick="window.location.href='datestrain.html'" class="back-button" title="الرجوع">←</button>
+
+  <div class="container">
+    <div class="card-train col-md-8 mx-auto p-4">
+      <h2 class="text-center text-primary">Booking Form</h2>
+      <form  method="POST" action="book-train.php">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="fullName">Full Name</label>
+      <input type="text" class="form-control" id="fullName" name="fullName" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label>Time</label>
+      <input class="form-control" type="text" id="time" name="time" readonly>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label>Price</label>
+      <input type="text" class="form-control" id="price" name="price" readonly>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label>Train Number</label>
+      <input type="text" class="form-control" id="trainNumber" name="trainNumber" readonly>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label>Payment</label>
+      <select id="payment" name="payment" class="form-control" required>
+        <option value="">Select Payment</option>
+        <option>Visa</option>
+        <option>Cash</option>
+      </select>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="date">Date</label>
+      <input type="date" class="form-control" id="date" name="date" required>
+    </div>
+  </div>
+
+  <div class="trip-details">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="from">From</label>
+        <input class="form-control" type="text" id="from" name="from" readonly>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="to">To</label>
+        <input class="form-control" type="text" id="to" name="to" readonly>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-3">
+    <button type="submit" class="btn btn-primary">Book</button>
+  </div>
+</form>
+
+    </div>
+  </div>
+</div>
+  <script src="./js/book.js"></script>
+</body>
+</html>

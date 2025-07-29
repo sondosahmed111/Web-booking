@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Train Schedule in Egypt</title>
+    <link rel="stylesheet" href="./css/datetran.css"> 
+</head>
+<body>
+    <div class="train-body">
+      
+        <button onclick="window.location.href='train.html'" class="back-button" title="Back to stage">&#8592;</button>
+
+  
+    <h1>Internal Train Schedule in Egypt</h1>
+    <div class="train-input" >
+      <select id="from" >
+        <option value="">from</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Luxor">Luxor</option>
+        <option value="Aswan">Aswan</option>
+        <option value="Giza">Giza</option>
+        <option value="Sohag">Sohag</option>
+        <option value="Mansoura">Mansoura</option>
+        <option value="Tanta">Tanta</option>
+        <option value="Zagazig">Zagazig</option>
+        <option value="Beni Suef">Beni Suef</option>
+        <option value="Minya">Minya</option>
+        <option value="Qena">Qena</option>
+        <option value="Damanhur">Damanhur</option>
+        <option value="Fayoum">Fayoum</option>
+        <option value="Port Said">Port Said</option>
+        <option value="Ismailia">Ismailia</option>
+        <option value="Suez">Suez</option>
+        <option value="Damietta">Damietta</option>
+        <option value="Beheira">Beheira</option>
+        <option value="Assiut">Assiut</option>
+    </select>
+        <input class="t-input"
+         id="to" type="text" placeholder="to" readonly>
+          
+    <script>
+        // وظيفة لاستخراج قيمة الـ GET parameter من الرابط
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+    
+        // عند تحميل الصفحة، حدد الوجهة المختارة تلقائيًا
+        window.onload = function () {
+            const selectedDestination = getQueryParam("destination");
+            if (selectedDestination) {
+                document.getElementById("to").value = selectedDestination;
+            }
+        };
+        </script>
+
+
+<button onclick="filterTrains()">Search</button>
+</div>
+    <div class="table-container">
+        <table id="trainsTable">
+            <thead>
+                <tr>
+                    <th>Train Number</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Departure Time</th>
+                    <th>Class</th>
+                    <th>Price</th>
+                    <th>Book</th>
+                </tr>
+            </thead>
+            <tbody id="trainsBody"></tbody>
+        </table>
+    </div>
+        <script src="./js/book.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+font-family: 'Arial', sans-serif;
+}
+/* زرار الرجوع  */
+.back-button {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  background-color: #007BFF;
+  border: 2px solid #007BFF;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  z-index: 9999;
+}
+
+/* Hover effect */
+.back-button:hover {
+  animation: bounce 0.5s;
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-8px); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .back-button {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+/* نهايه زرار الرجوع  */
+
+.train-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: url('../img/tr2.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f5f5f5;
+    overflow: hidden;
+  }
+
+  h1 {
+    color: #003366;
+    margin-top: 30px;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .inpout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+.t-input{
+    text-align: center; width: 80px;
+     padding: 12px 10px ; margin: 12px;
+}
+
+  select,
+  button,
+  input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  select:focus,
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.4);
+  }
+.table-container {
+  width: 90vw; /* تاخد عرض الشاشة بالكامل */
+  margin-top: 25px;
+  overflow-x: auto;
+  padding: 0 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  button {
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.6);
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+ @media (max-width: 768px) {
+  .btrain-body {
+    height: auto;
+    overflow-y: auto;
+    padding-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .inpout {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  select,
+  input,
+  button {
+    width: 90%;
+    max-width: 300px;
+    font-size: 1rem;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+
+  table {
+    font-size: 14px;
+    min-width: 650px; /* عشان الجدول يفضل منسق وقابل للسحب */
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .t-input {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+}
+/* end datetrain */
+/* start : book train */
+    .body-train {
+      background: url('../img/tr33.webp') no-repeat center center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-train{
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      padding: 25px;
+      min-width: 950px;
+      animation: fadeInUp 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+.trip-details label {
+  font-weight: bold;
+  font-size: 22px; /* مختلف عن باقي */
+}
+
+.trip-details input {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+    .btn-primary {
+      padding: 10px 20px;
+      background: #164488;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      animation: pulse 2s infinite;
+      cursor: pointer;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .btn-primary:hover {
+      animation: rubberBand 1s both;
+    }
+
+    @keyframes rubberBand {
+      0% { transform: scale(1); }
+      30% { transform: scaleX(1.25) scaleY(0.75); }
+      40% { transform: scaleX(0.75) scaleY(1.25); }
+      60% { transform: scaleX(1.15) scaleY(0.85); }
+      100% { transform: scale(1); }
+    }
+
+#form-message {
+      font-weight: bold;
+      color: red;
+    }
+/* end: book train */

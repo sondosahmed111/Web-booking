@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Train </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/bookstyle.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg" style="background-color: #465c7e; padding-top: 20px; padding-bottom: 20px;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="text-light fs-2">Train</i>
+    </a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-4 align-items-center">
+
+        <!-- Other Links -->
+        <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="flight.html">Flight</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-metro.html">Metro</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="background-cinema.html">Cinema</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-stage.html">Stage</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-hotel.html">Hotel</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-games.html">Games</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-match.html">Match</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      
+<!-- Hero Section -->
+<section class="tm_hero-section">
+    <h5 class="text-uppercase" >The Best</h5>
+    <h1 class="display-4 fw-bold" style="font-size: 80px;">TRAIN</h1>
+    <div class="d-flex justify-content-center gap-3 mt-3">
+    </div>
+  
+  
+    <div class="reserve-text">
+      Reserve !
+    </div>
+  </section>
+
+
+<!-- next/prev -->
+  
+  <section class="popular-destinations">
+    <h2 class="popular-destinations-title " >Cairo and Surrounding Areas</h2>
+    <p class="popular-destinations-subtitle" >Discover the Best Places in Cairo, 6th of October, New Cairo, and More</p>
+  
+    <div class="destination-slider">
+        <duttons class="slider-btn slider-btn-next" id="nextBtn">&#8594;</duttons>
+  
+      <div class="destination-cards-wrapper" id="cardSlider">
+        <div class="destination-card">
+          <img src="./img/cairo1.jpg" alt="Cairo">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Cairo</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/luxor1.jpg" alt="Nasr City">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Aswan</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/aswan1.jpg" alt="New Cairo">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Luxor</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/c111.jpg" alt="10th of Ramadan City">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>10th of Ramadan City</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/maadi11.jpg" alt="6th of October City">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>6th of October City</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/b11.jpg" alt="Maadi">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Maadi</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/giza11.jpg" alt="Al Rehab City">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Al Rehab City</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/sharm111.jpg" alt="Shorouk City">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Shorouk City</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/fayoum11.jpg" alt="Minya">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Minya</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/alexandria11.jpg" alt="Alexandria">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Alexandria</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/maadi11.jpg" alt="Maadi">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>Maadi</p>
+        </div>
+        <div class="destination-card">
+          <img src="./img/maadi11.jpg" alt="6th of October City">
+          <div class="star-rating">
+            <span class="star" data-index="1">&#9733;</span>
+            <span class="star" data-index="2">&#9733;</span>
+            <span class="star" data-index="3">&#9733;</span>
+            <span class="star" data-index="4">&#9733;</span>
+            <span class="star" data-index="5">&#9733;</span>
+          </div>
+          <p>6th of October City</p>
+        </div>
+      </div>  
+   
+      <duttons class="slider-btn slider-btn-prev" id="prevBtn" disabled>&#8592;</duttons>
+   </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".destination-card");
+  
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+            observer.unobserve(entry.target); // يحصل مرة واحدة بس
+          }
+        });
+      }, {
+        threshold: 0.3
+      });
+  
+      cards.forEach(card => {
+        observer.observe(card);
+      });
+    });
+  
+ const stars = document.querySelectorAll('.star');
+
+// تحميل الاختيارات من localStorage
+let savedStars = JSON.parse(localStorage.getItem('activeStars')) || [];
+
+stars.forEach((star, index) => {
+  // لو النجم محفوظ، فعّله
+  if (savedStars.includes(index)) {
+    star.classList.add('active');
+  }
+
+  // عند الضغط على النجمة
+  star.addEventListener('click', () => {
+    star.classList.toggle('active');
+
+    // تحديث الحالة
+    const updated = [];
+    stars.forEach((s, i) => {
+      if (s.classList.contains('active')) {
+        updated.push(i);
+      }
+    });
+
+    // حفظها في localStorage
+    localStorage.setItem('activeStars', JSON.stringify(updated));
+  });
+});
+
+    
+    </script>
+   
+     <!-- about -->
+
+     <section id="about">
+        <div class="flight-about">
+                <img class="about-img" src="img/t5.jpeg " alt="About Us">
+            <div class="about-text">
+                
+                <p>
+           
+Welcome to Booking, your trusted partner for booking train
+journeys with ease and convenience.
+ 🚄 We are committed to providing a seamless travel experience through
+  a user-friendly platform where you can search, compare, and book train tickets at the best prices. At Booking, customer satisfaction is our top priority. We offer 24/7 support to assist you with your bookings, changes, and inquiries. Your journey starts here! Book with confidence and enjoy a smooth, hassle-free train travel experience with us. 🌍🚆.
+                </p>
+               </div> </div>
+              </section>
+             
+       <!-- about -->
+<!-- Best Destinations -->
+<section class="destinations">
+   <h2>Best Destinations</h2>
+   <div class="search-container mt-3">
+    <a href="https://www.google.com/maps" >
+      <img src="./img/map.png" alt="" style="width: 50px; height: 50px; border-radius: 50%; border: 1px solid rgb(36, 36, 59); animation: pulse 2s infinite;">
+    </a>
+    
+       <input type="text" id="search-input" class="form-control" 
+       placeholder="Enter a place (e.g., Cairo)" style="display:inline-block; width:auto; margin-left:10px;">
+       <button class="btn btn-primary" onclick="searchTrain()" style="display:inline-block; margin-left:10px;">Search</button>
+   </div>
+   
+   <div class="train-destinations">
+       <!-- عرض أول 8 وجهات -->
+       <div class="f-destinations show">
+           <img src="./img/القاهرة.jpeg" alt="Cairo" >
+           <div class="f-info">
+               <h3>Cairo</h3>
+               <p>Discover a cultural and natural diversity that pulsates with life.</p>
+               <a href="datestrain.html?destination=Cairo" class="btn1">BOOK NOW</a>
+
+           </div>
+       </div>
+       <div class="f-destinations show">
+           <img src="./img/اسكندريه.jpg" alt="Alexandria">
+           <div class="f-info">
+               <h3>Alexandria</h3>
+               <p>Enjoy the Mediterranean breeze and historical wonders.</p>
+               <a href="datestrain.html?destination=Alexandria" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations show">
+           <img src="./img/الاقصر.jpeg" alt="Luxor">
+           <div class="f-info">
+               <h3>Luxor</h3>
+               <p>Explore ancient Egyptian temples and the Valley of the Kings.</p>
+               <a href="datestrain.html?destination=Luxor" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations show">
+           <img src="./img/اسوان.jpeg" alt="Aswan" >
+           <div class="f-info">
+               <h3>Aswan</h3>
+               <p>Experience the beauty of the Nile and Nubian culture.</p>
+               <a href="datestrain.html?destination=Aswan" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations show">
+           <img src="./img/الجيزه.jpeg" alt="Giza">
+           <div class="f-info">
+               <h3>Giza</h3>
+               <p>Visit the Great Pyramids and the Sphinx.</p>
+               <a href="datestrain.html?destination=Giza" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations show">
+           <img src="./img/سوهاج.jpeg" alt="Sohag">
+           <div class="f-info">
+               <h3>Sohag</h3>
+               <p>Explore the historical sites and river views.</p>
+               <a href="datestrain.html?destination=Sohag" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations show">
+           <img src="./img/المنصوره.jpg" alt="Mansoura" >
+           <div class="f-info">
+               <h3>Mansoura</h3>
+               <p>Enjoy rich history and vibrant culture.</p>
+               <a href="datestrain.html?destination=Mansoura" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations show">
+           <img src="./img/بني سويف.jpg" alt="Beni Suef" >
+           <div class="f-info">
+               <h3>Tanta</h3>
+               <p>Experience the charm of the Nile Delta.</p>
+               <a href="datestrain.html?destination=Tanta" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/زقازيق.jpeg" alt="Zagazig">
+           <div class="f-info">
+               <h3>Zagazig</h3>
+               <p>Explore the vibrant and traditional Egyptian culture.</p>
+               <a href="datestrain.html?destination=Zagazig" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/بني سويف.jpg" alt="Beni Suef" >
+           <div class="f-info">
+               <h3>Beni Suef</h3>
+               <p>Discover the agricultural beauty of Egypt.</p>
+               <a href="datestrain.html?destination=Beni Suef" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/المنيا.jpg" alt="Minya" >
+           <div class="f-info">
+               <h3>Minya</h3>
+               <p>Explore the archaeological wonders and ancient tombs.</p>
+               <a href="datestrain.html?destination=Minya" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/قنا.jpeg" alt="Qena">
+           <div class="f-info">
+               <h3>Qena</h3>
+               <p>Visit the beautiful southern city full of history.</p>
+               <a href="datestrain.html?destination=Qena" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/دمنهور.jpg" alt="Damanhur">
+           <div class="f-info">
+               <h3>Damanhur</h3>
+               <p>Explore this charming city by the Nile.</p>
+               <a href="datestrain.html?destination=Damanhur" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/الفيوم.jpeg" alt="Fayoum">
+           <div class="f-info">
+               <h3>Fayoum</h3>
+               <p>Visit the serene lakes and natural beauty.</p>
+               <a href="datestrain.html?destination=Fayoum" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/بولرسعيد.jpeg" alt="Port Said" >
+           <div class="f-info">
+               <h3>Port Said</h3>
+               <p>Explore the Mediterranean charm and historic port.</p>
+               <a href="datestrain.html?destination=Port Said" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/بورسعيد.jpg" alt="Ismailia">
+           <div class="f-info">
+               <h3>Ismailia</h3>
+               <p>Visit the city known for its green spaces and canal views.</p>
+               <a href="datestrain.html?destination=Ismailia" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/سويس.jpg" alt="Suez" >
+           <div class="f-info">
+               <h3>Suez</h3>
+               <p>Discover the gateway to the Suez Canal.</p>
+               <a href="datestrain.html?destination=Suez" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/دمياط.jpeg" alt="Damietta">
+           <div class="f-info">
+               <h3>Damietta</h3>
+               <p>Explore the coastal beauty and rich heritage of Damietta.</p>
+               <a href="datestrain.html?destination=Damietta" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/البحيره.jpg" alt="Beheira">
+           <div class="f-info">
+               <h3>Beheira</h3>
+               <p>Experience rural Egypt and beautiful lakeside views.</p>
+               <a href="datestrain.html?destination=Beheira" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       <div class="f-destinations hidden">
+           <img src="./img/Assiut.jpg" >
+                       <div class="f-info">
+               <h3>Assiut</h3>
+               <p>Explore the ancient sites and modern developments.</p>
+               <a href="datestrain.html?destination=Assiut" class="btn1">BOOK NOW</a>
+           </div>
+       </div>
+       
+   </div>
+   
+   <!-- زر "المزيد" -->
+   <button id="showMoreBtn" class="btn1">Show More</button>
+</section>
+
+<!-- Feedback Section -->
+<div class="container py-2">
+    <div class="section-wrapper mt-3 mb-5 text-center"> 
+      <div class="section-title text-center mb-5">Feedback</div>
+      <div class="row g-4">
+        
+        <div class="col-md-6">
+          <div class="feedback-card d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./img/userr.jpg" alt="Jenny Wilson" class="me-3">
+              <div>
+                <h5 class="mb-0">Jenny Wilson</h5>
+                <small>Movie Enthusiast</small>
+              </div>
+            </div>
+            <p class="flex-grow-1">
+              "The ultimate cinema experience! From the luxury seating to the crystal-clear visuals and immersive sound, every visit feels like a VIP experience. Booking tickets online is so smooth and hassle-free!"
+            </p>
+            <div class="text-end feedback-quote">”</div>
+          </div>
+        </div>
+  
+        <div class="col-md-6">
+          <div class="feedback-card d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./img/userrr.jpg" alt="Guy Hawkins" class="me-3">
+              <div>
+                <h5 class="mb-0">Guy Hawkins</h5>
+                <small>Loyal Customer</small>
+              </div>
+            </div>
+            <p class="flex-grow-1">
+              "I absolutely love this cinema! The atmosphere is cozy and the selection of movies is always up-to-date. The staff is friendly and the snacks are amazing. Highly recommend for a perfect movie night!"
+            </p>
+            <div class="text-end feedback-quote">”</div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container-fluid px-5"> 
+      <div class="row">
+          
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>We provide the best cinema experience with luxury seating, immersive sound, and up-to-date movie selections. Join us for a night to remember!</p>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Movies</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Offers</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <a href="https://www.facebook.com" target="_blank" class="text-light me-3 social-link"> 
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="text-light me-3 social-link">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="text-light me-3 social-link">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" class="text-light social-link">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+            </div>
+  
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 <span style="color: #007BFF;">Train</span> All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!--  scroll-->
+  <button id="scrollToTop" class="scroll-button">&#8593;</button>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <script src="./js/script.js"></script>
+
+</body>
+</html>
+
+
+
+

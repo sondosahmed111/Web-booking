@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bookstyle.css">
+
+</head>
+<body>
+
+ <div class="body_cinema">
+<nav class="navbar navbar-expand-lg" style="background-color: #465c7e; padding-top: 20px; padding-bottom: 20px;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="text-light fs-2">CINEMA</i>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-4 align-items-center">
+
+        <!-- Location Icon + Cinema Link -->
+        <li class="nav-item d-flex align-items-center">
+          <a onclick="goToNearestCinema()" title="Find Nearest Cinema" style="cursor: pointer; color: rgb(50, 121, 228); margin-right: 6px;">
+            <i class="bi bi-geo-alt-fill fs-5"></i>
+          </a>
+      
+        </li>
+
+        <!-- Other Links -->
+        <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="train.html">Train</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="flight.html">Flight</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-metro.html">Metro</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-hotel.html">Hotel</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-stage.html">Stage</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-games.html">Games</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="background-match.html">Match</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+<section class="d-flex align-items-center min-vh-100" style="background: url(./img/cinema101.jpeg) no-repeat center center; background-size: cover;">
+  <div class="container text-center text-light">
+    <h1 class="display-3 fw-bold mb-4 animate_animated animate_fadeInDown">Welcome to Your Dream World</h1>
+    <p class="lead mb-5 animate_animated animate_fadeInUp">Experience the magic of cinema, travel, and adventures all in one place.</p>
+    
+    <div class="d-flex justify-content-center gap-4">
+      <a href="https://twitter.com" target="_blank" class="text-primary fs-1">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" class="text-primary fs-1">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://youtube.com" target="_blank" class="text-primary fs-1">
+        <i class="bi bi-youtube"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Categories Section -->
+   
+
+<div class="container py-5">
+  <div class="section-wrapper">
+    <div class="section-title">Categories</div>
+  </div>
+
+  <div class="row g-3 mt-4">
+    <div class="col-md-4"  data-aos="fade-up" data-aos-delay="100">
+      <div class="category-card" style="background-image: url(./img/action1.jpg);">
+        <span>Action</span>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="90">
+      <div class="category-card" style="background-image: url(./img/romance.jpg);">
+        <span>Romance</span>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+      <div class="category-card" style="background-image: url(./img/adventure.webp);">
+        <span>Adventure</span>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="70">
+      <div class="category-card" style="background-image: url(./img/strage.webp);">
+        <span>Strategy</span>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="60">
+      <div class="category-card" style="background-image: url(./img/moive.jpeg);">
+        <span>Movie</span>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+      <div class="category-card" style="background-image: url(./img/drama.webp);">
+        <span>Drama</span>
+      </div>
+    </div>
+  </div>
+  <!-- Feature Section -->
+  <div class="section-wrapper mt-5">
+    <div class="section-title">Our Feature</div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-4 feature-card">
+      <img src="./img/feature1.webp" class="feature-img" alt="Feature 1">
+      <h3>Exciting Adventures</h3>
+      <p>Join us in unforgettable movie experiences filled with thrill and action.</p>
+    </div>
+    <div class="col-md-4 feature-card">
+      <img src="./img/feature2.webp" class="feature-img" alt="Feature 2">
+      <h3>Romantic Stories</h3>
+      <p>Fall in love with our romantic movie collections that touch the heart.</p>
+    </div>
+    <div class="col-md-4 feature-card">
+      <img src="./img/feature3.webp" class="feature-img" alt="Feature 3">
+      <h3>Epic Dramas</h3>
+      <p>Experience powerful stories and outstanding performances on the big screen.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Most View Section -->
+<div class="container py-5">
+  <div class="section-wrapper mt-3">
+    <div class="section-title">Most View</div>
+  </div>
+  <div class="row mt-4 g-4">
+    <div class="col-md-6">
+      <div class="card text-white" style="background-image: url(./img/back-moives.webp); background-size:
+       cover; background-position: center; height: 500px; position: relative; overflow: hidden; border-radius: 15px;"
+        data-animation="animate__fadeInLeft" data-delay="0s">
+        <div class="card-body d-flex flex-column justify-content-start" style="background: rgba(0, 0, 0, 0.5); height: 100%; padding: 20px;">
+          <h4 class="card-title">Luis and the Aliens</h4>
+          <p class="card-text" style="font-size: 22px;">Luis, a lonely 12-year-old boy, lives with his father, a busy UFO scientist. His life takes an unexpected turn when three friendly aliens accidentally land on Earth...</p>
+          <a href="cinema.html" class="animated-button">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row g-3">
+        <div class="col-6">
+          <div class="card" style="height: 240px; overflow: hidden;" data-animation="animate__fadeInUp" data-delay="0s">
+            <img src="./img/moive1.jpg" class="card-img-top h-100" style="object-fit: cover;" alt="Kingdom">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="height: 240px; overflow: hidden;" data-animation="animate__fadeInUp" data-delay="0.3s">
+            <img src="./img/moive2.jpg" class="card-img-top h-100" style="object-fit: cover;" alt="Ratatouille">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="height: 240px; overflow: hidden;" data-animation="animate__fadeInUp" data-delay="0.6s">
+            <img src="./img/moive1.webp" class="card-img-top h-100" style="object-fit: cover;" alt="Marwan Movie">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="height: 240px; overflow: hidden;" data-animation="animate__fadeInUp" data-delay="0.9s">
+            <img src="./img/moive4.jpg" class="card-img-top h-100" style="object-fit: cover;" alt="Tigers">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Offers Section -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" style="font-family: 'Georgia', serif;">
+      Most Spotlight on Offers
+      <div style="width: 100px; height: 3px; background-color: #00aaff; margin: 10px auto 0;"></div>
+    </h2>
+
+    <div class="row g-4 mt-4 offers-row">
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm" data-animation data-direction="right" style="background-color: #e6f7ff; border-radius: 15px;">
+    <img src="./img/offer1.webp" class="card-img-top" alt="Morning Shows" style="object-fit: cover; height: 510px; width: 100%; border-radius: 15px 15px 0 0;">
+    <div class="card-body d-flex flex-column justify-content-between text-center">
+      <div>                   
+        <h5 class="card-title" style="color: rgb(69, 56, 182); font-weight: bold;">Fifty Shades Freed</h5>
+        <h4 class="card-text text-primary fw-bold mt-2">
+          Price: <span style="text-decoration: line-through; color: gray;">200 EGP</span>
+          <span style="color: #4CAF50; margin-left: 10px;">140 EGP</span>
+        </h4>
+        <p class="text-secondary mb-2" style="font-size: 0.9rem;">Type: Romantic</p>
+      </div>
+      <a href="book.html?h5=Fifty Shades Freedt&price=140" class="btn btn-primary mt-2" style="font-size: 0.7rem; width: 80px; display: block; margin: 10px auto 0;">Offer</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm" data-animation data-direction="left" style="background-color: #e6f7ff; border-radius: 15px;">
+    <img src="./img/offer2.webp" class="card-img-top" alt="Marvel Marathon" style="object-fit: cover; height: 510px; width: 100%; border-radius: 15px 15px 0 0;">
+    <div class="card-body d-flex flex-column justify-content-between text-center">
+      <div>
+        <h5 class="card-title" style="color: rgb(69, 56, 182); font-weight: bold;">The Dark Knight</h5>
+        <h4 class="card-text text-primary fw-bold mt-2">
+          Price: <span style="text-decoration: line-through; color: gray;">250 EGP</span>
+          <span style="color: #4CAF50; margin-left: 10px;">120 EGP</span>
+        </h4>
+        <p class="text-secondary mb-2" style="font-size: 0.9rem;">Type: Action</p>
+      </div>
+      <a href="book.html?h5=The Dark Knight&price=120" class="btn btn-primary mt-2" style="font-size: 0.7rem; width: 80px; display: block; margin: 10px auto 0;">Offer</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card h-100 shadow-sm" data-animation data-direction="right" style="background-color: #e6f7ff; border-radius: 15px;">
+    <img src="./img/offer3.webp" class="card-img-top" alt="Snack Discount" style="object-fit: cover; height: 510px; width: 100%; border-radius: 15px 15px 0 0;">
+    <div class="card-body d-flex flex-column justify-content-between text-center">
+      <div>
+        <h5 class="card-title" style="color: rgb(69, 56, 182); font-weight: bold;">Me Before You</h5>
+        <h4 class="card-text text-primary fw-bold mt-2">
+          Price: <span style="text-decoration: line-through; color: gray;">300 EGP</span>
+          <span style="color: #4CAF50; margin-left: 10px;">200 EGP</span>
+        </h4>
+        <p class="text-secondary mb-2" style="font-size: 0.9rem;">Type:  Drama</p>
+      </div>
+      <a href="book.html?h5=Me Before You&price=200" class="btn btn-primary mt-2" style="font-size: 0.7rem; width: 80px; display: block; margin: 10px auto 0;">Offer</a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Feedback Section -->
+<div class="container py-5">
+  <div class="section-wrapper mt-3 mb-5"> 
+    <div class="section-title text-center mb-5">Feedback</div>
+    <div class="row g-4">
+      
+      <div class="col-md-6">
+        <div class="feedback-card d-flex flex-column">
+          <div class="d-flex align-items-center mb-3">
+            <img src="./img/userr.jpg" alt="Jenny Wilson" class="me-3">
+            <div>
+              <h5 class="mb-0">Jenny Wilson</h5>
+              <small>Movie Enthusiast</small>
+            </div>
+          </div>
+          <p class="flex-grow-1">
+            "The ultimate cinema experience! From the luxury seating to the crystal-clear visuals and immersive sound, every visit feels like a VIP experience. Booking tickets online is so smooth and hassle-free!"
+          </p>
+          <div class="text-end feedback-quote">”</div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feedback-card d-flex flex-column">
+          <div class="d-flex align-items-center mb-3">
+            <img src="./img/userrr.jpg" alt="Guy Hawkins" class="me-3">
+            <div>
+              <h5 class="mb-0">Guy Hawkins</h5>
+              <small>Loyal Customer</small>
+            </div>
+          </div>
+          <p class="flex-grow-1">
+            "I absolutely love this cinema! The atmosphere is cozy and the selection of movies is always up-to-date. The staff is friendly and the snacks are amazing. Highly recommend for a perfect movie night!"
+          </p>
+          <div class="text-end feedback-quote">”</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container-fluid px-5"> 
+    <div class="row">
+      
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase">About Us</h5>
+        <p>We provide the best cinema experience with luxury seating, immersive sound, and up-to-date movie selections. Join us for a night to remember!</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Movies</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Offers</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase">Follow Us</h5>
+        <a href="https://www.facebook.com" target="_blank" class="text-light me-3 social-link">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-light me-3 social-link">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-light me-3 social-link">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="text-light social-link">
+          <i class="bi bi-youtube"></i>
+        </a>
+      </div>
+          </div>
+
+    <div class="text-center mt-4">
+      <p class="mb-0">&copy; 2025 <span style="color: #007BFF;">Cinema</span>. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+ </div>
+<!--  scroll-->
+<button id="scrollToTop" class="scroll-button">&#8593;</button>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <script src="./js/script.js"></script>
+
+</body>
+</html>

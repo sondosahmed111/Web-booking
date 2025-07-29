@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    body {
+      background-color: #f5f5f5;
+      padding: 40px;
+      background-image: url(./img/profilee.jpg);
+      background-repeat: no-repeat;
+      background-size: cover; 
+      animation: gradientBG 10s ease infinite;
+  
+    }
+
+    .shape {
+  position: absolute;
+  animation: floatUp linear infinite;
+  opacity: 0.8;
+  /* إضافة الـ animation-delay لتشغيل الحركات فور تحميل الصفحة */
+}
+
+/* دائرة */
+.circle {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.484);
+  border-radius: 50%;
+}
+
+/* نجم */
+.star::before {
+  content: "★";
+  font-size: 40px;
+  color: #faeb6c;
+}
+
+/* قلب */
+.heart::before {
+  content: "❤";
+  font-size: 33px;
+  color: #fa55a8;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* تحديد الحركات المختلفة */
+.shape:nth-child(1)  { left: 5%; animation-duration: 10s; animation-delay: 0s; }
+.shape:nth-child(2)  { left: 15%; animation-duration: 12s; animation-delay: 0s; }
+.shape:nth-child(3)  { left: 25%; animation-duration: 9s; animation-delay: 0s; }
+.shape:nth-child(4)  { left: 35%; animation-duration: 11s; animation-delay: 0s; }
+.shape:nth-child(5)  { left: 45%; animation-duration: 13s; animation-delay: 0s; }
+.shape:nth-child(6)  { left: 55%; animation-duration: 10s; animation-delay: 0s; }
+.shape:nth-child(7)  { left: 65%; animation-duration: 14s; animation-delay: 0s; }
+.shape:nth-child(8)  { left: 75%; animation-duration: 8s; animation-delay: 0s; }
+.shape:nth-child(9)  { left: 85%; animation-duration: 10s; animation-delay: 0s; }
+.shape:nth-child(10) { left: 95%; animation-duration: 11s; animation-delay: 0s; }
+.shape:nth-child(11) { left: 50%; animation-duration: 9s; animation-delay: 0s; }
+.shape:nth-child(12) { left: 20%; animation-duration: 12s; animation-delay: 0s; }
+.shape:nth-child(13) { left: 70%; animation-duration: 13s; animation-delay: 0s; }
+.shape:nth-child(14) { left: 40%; animation-duration: 8s; animation-delay: 0s; }
+.shape:nth-child(15) { left: 60%; animation-duration: 10s; animation-delay: 0s; }
+
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .profile-card {
+      background-color: #ffffffb6;
+      border-radius: 15px;
+      box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.481); /* ظل أوضح */
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .profile-img {
+      max-width: 180px;
+      margin-bottom: 20px; /* إضافة مسافة تحت الصورة */
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column; /* ترتيب العناصر تحت بعضها */
+      gap: 10px; /* المسافة بين العناصر */
+    }
+
+    .profile-info p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .profile-info strong {
+      color: #007bff;
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-header .profile-title {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .profile-header .icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .ticket-card {
+      background-color: rgba(52, 58, 111, 0.855);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: scale(1.05);
+      box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.9); /* ظل أوضح */
+    }
+    .ticket-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    .ticket-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .ticket-info {
+      text-align: left;
+      display: flex;
+      flex-direction: column; /* ترتيب العناصر تحت بعضها */
+      gap: 8px; /* المسافة بين العناصر */
+      align-items: flex-start;
+    }
+
+    .ticket-info p {
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .ticket-info strong {
+      color: black;
+      font-size: 18px; 
+    }
+
+    .ticket-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center; /* توسيط العنوان */
+    }
+
+    .tickets-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .tickets-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .settings-button {
+      display: block;
+      width: 200px;
+      margin: 40px auto;
+      padding: 10px 20px;
+      background-color: #0056b3;
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .settings-button:hover {
+      background-color: #010911;
+    }
+    @keyframes bounceLeft {
+          0%   { transform: translateX(0); }
+          50%  { transform: translateX(-15px); }
+          100% { transform: translateX(0); }
+        }
+      
+        .back-button:active {
+          background-color: #007BFF !important;
+          color: #fff !important;
+        }
+
+    </style>
+</head>
+<body>
+ 
+  <!-- أشكال كثيرة للتحريك المستمر -->
+  <div class="shape circle"></div>
+  <div class="shape star"></div>
+  <div class="shape heart"></div>
+  <div class="shape circle"></div>
+  <div class="shape heart"></div>
+  <div class="shape star"></div>
+  <div class="shape circle"></div>
+  <div class="shape star"></div>
+  <div class="shape heart"></div>
+  <div class="shape circle"></div>
+  <div class="shape star"></div>
+  <div class="shape heart"></div>
+  <div class="shape circle"></div>
+  <div class="shape heart"></div>
+  <div class="shape star"></div>
+
+      
+      <button onclick="window.location.href='index.html'" class="back-button" style="
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #fff;
+        border: 2px solid #007BFF;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        box-shadow: 10px 10px 8px rgba(0,0,0,0.6);
+        transition: all 0.3s ease;
+      "
+      onmouseover="this.style.animation='bounceLeft 0.5s ease'"
+      onmouseout="this.style.animation=''"
+      title="الرجوع لصفحة الطيران">
+        &#8592;
+      </button>
+
+  <div class="profile-card d-flex align-items-start">
+    <div class="profile-img me-4">
+      <img src="img/profile.jpg" alt="User Image">
+    </div>
+    <div class="profile-info">
+      <p><strong>First Name:</strong> <span id="firstName">N/A</span></p>
+      <p><strong>Last Name:</strong> <span id="lastName">N/A</span></p>
+      <p><strong>Email:</strong> <span id="email">N/A</span></p>
+      <p><strong>Password:</strong> <span id="password">••••••••</span></p>
+    </div>
+  </div>
+  <!-- Ticket Reservations Section -->
+  <div class="tickets-title">
+    <div class="gallery" style="background-color: transparent;">
+      <div class="title text-center">
+        <h2>Reserved Ticket</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="tickets-container">
+    <!-- Football Match Ticket -->
+    <div class="ticket-card">
+      <img src="./img/imag9.jpg" alt="Football Match" class="ticket-img">
+      <div class="ticket-info">
+        <p class="ticket-title">Football Match</p>
+        <p><strong>Event Name:</strong> Champions Final</p>
+        <p><strong>Date:</strong> May 27, 2025</p>
+        <p><strong>Location:</strong> National Stadium</p>
+        <p><strong>Price:</strong> $50</p>
+      </div>
+    </div>
+
+    <!-- Amusement Park Ticket -->
+    <div class="ticket-card">
+      <img src="./img/gimg5.jpeg" alt="Amusement Park" class="ticket-img">
+      <div class="ticket-info">
+        <p class="ticket-title">Amusement Park</p>
+        <p><strong>Event Name:</strong> Funland Adventure</p>
+        <p><strong>Date:</strong> June 15, 2025</p>
+        <p><strong>Location:</strong> Funland Park</p>
+        <p><strong>Price:</strong> $30</p>
+      </div>
+    </div>
+
+    <!-- Cinema Ticket -->
+    <div class="ticket-card">
+      <img src="./img/film8.jpg" alt="Cinema" class="ticket-img">
+      <div class="ticket-info">
+        <p class="ticket-title">Cinema</p>
+        <p><strong>Movie Name:</strong> The Great Adventure</p>
+        <p><strong>Date:</strong> April 20, 2025</p>
+        <p><strong>Location:</strong> Cinema City</p>
+        <p><strong>Price:</strong> $15</p>
+      </div>
+    </div>
+
+    <!-- Theatre Ticket -->
+    <div class="ticket-card">
+      <img src="./img/stage6.jpg" alt="Theatre" class="ticket-img">
+      <div class="ticket-info">
+        <p class="ticket-title">Theatre</p>
+        <p><strong>Event Name:</strong> Hamlet Play</p>
+        <p><strong>Date:</strong> May 10, 2025</p>
+        <p><strong>Location:</strong> Grand Theatre</p>
+        <p><strong>Price:</strong> $40</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('firstName').textContent = localStorage.getItem('firstName') || 'N/A';
+      document.getElementById('lastName').textContent = localStorage.getItem('lastName') || 'N/A';
+      document.getElementById('email').textContent = localStorage.getItem('email') || 'N/A';
+      document.getElementById('phone').textContent = localStorage.getItem('phone') || 'N/A';
+
+      const storedPassword = localStorage.getItem('password');
+      const passwordMasked = storedPassword ? '•'.repeat(storedPassword.length) : 'N/A';
+      document.getElementById('password').textContent = passwordMasked;
+    });
+  </script>
+<!-- delete -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('firstName').textContent = localStorage.getItem('firstName') || 'N/A';
+    document.getElementById('lastName').textContent = localStorage.getItem('lastName') || 'N/A';
+    document.getElementById('email').textContent = localStorage.getItem('email') || 'N/A';
+    document.getElementById('phone').textContent = localStorage.getItem('phone') || 'N/A';
+
+    const storedPassword = localStorage.getItem('password');
+    const passwordMasked = storedPassword ? '•'.repeat(storedPassword.length) : 'N/A';
+    document.getElementById('password').textContent = passwordMasked;
+  });
+</script>
+
+<!-- delete -->
+<script>
+  // حذف التذاكر (إلغاء)
+  document.querySelectorAll('.ticket-card').forEach((card, index) => {
+    const cancelBtn = document.createElement('button');
+    cancelBtn.textContent = 'Cancel';
+    cancelBtn.className = 'btn btn-danger mt-2';
+    cancelBtn.onclick = () => {
+      let deletedTickets = JSON.parse(localStorage.getItem('deletedTickets') || '[]');
+      deletedTickets.push(card.innerHTML);
+      localStorage.setItem('deletedTickets', JSON.stringify(deletedTickets));
+      card.remove();
+    };
+    card.appendChild(cancelBtn);
+  });
+</script>
+<!-- Buttons Side by Side -->
+<div class="d-flex justify-content-center gap-3 mt-5">
+<a href="settings.html" class="btn btn-primary">Settings</a>
+<a href="delete.html" class="btn btn-danger">Delete Card</a>
+</div>
+</body>
+</html>

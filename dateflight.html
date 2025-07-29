@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Flight Schedule</title>
+   <link rel="stylesheet" href="./css/dataandbookflight.css">
+</head>
+<body>
+    <div class="f-date">
+   <button onclick="window.location.href='flight.html'" class="back-button" title="Back to cinema">&#8592;</button>
+    <h1>Internal Flight Schedule in Egypt</h1>
+    <div class="input">
+        
+    <select class="f-input" id="from">
+        <option value="">from</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Luxor">Luxor</option>
+        <option value="Aswan">Aswan</option>
+        <option value="Sharm El-Sheikh">Sharm El-Sheikh</option>
+        <option value="Hurghada">Hurghada</option>
+        <option value="Marsa Matruh">Marsa Matruh</option>
+        <option value="Saint Catherine">Saint Catherine</option>
+        <option value="Arish">Arish</option>
+        <option value="Taba">Taba</option>
+        <option value="Assiut">Assiut</option>
+        <option value="Marsa Alam">Marsa Alam</option>
+    </select>
+
+    <input class="f-inputr"  id="to" type="text" placeholder="to" readonly>
+       
+
+    <button onclick="filterFlights()">Search</button>
+</div>
+    <div  class="table-container">
+        <table id="flightsTable">
+            <thead>
+                <tr>
+                    <th>Flight Number</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Departure Time</th>
+                    <th>Airline</th>
+                    <th>Gate</th>
+                    <th>Price (EGP)</th>
+                    <th>Book</th>
+                </tr>
+            </thead>
+            <tbody id="flightsBody">
+                <!-- Data will be inserted here -->
+                <tr>
+                    <td>EGS101</td>
+                    <td>Cairo</td>
+                    <td>Alexandria</td>
+                    <td>06:00 AM</td>
+                    <td>EgyptAir</td>
+                    <td>A1</td>
+                    <td>1500 EGP</td>
+                    <td><button onclick="choosePayment('EGS101', 1500, 'Cairo', 'Alexandria', '06:00 AM')">Book</button></td>
+                </tr>
+            </tbody>
+            </table>
+            </div>
+            </div>
+            <script src="./js/f-detabook.js"> </script>
+</body>
+</html>

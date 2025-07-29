@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Games card</title>
+    <link rel="stylesheet" href="./css/bookstyle.css">
+</head>
+ <body>
+<body>
+  <div class="body_games_card">
+    <button onclick="window.location.href='background-games.html'"  class="back-button" title="Back to cinema">&#8592;</button>
+    <div class="container_games">
+        <div class="background-section_games">
+            <h1>Best Entertainment Offers</h1>
+            <p>Enjoy unforgettable moments with your family and friends</p>
+        </div>
+        
+        <div class="discount-container_games">
+            <!-- Card 1 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames11.webp" alt="Dream Park">
+                <div class="discount_games-info">
+                    <h3>Dream Park</h3>
+                                   <div class="star-rating">
+                                    <span class="star" data-index="1">&#9733;</span>
+                                    <span class="star" data-index="2">&#9733;</span>
+                                    <span class="star" data-index="3">&#9733;</span>
+                                    <span class="star" data-index="4">&#9733;</span>
+                                    <span class="star" data-index="5">&#9733;</span>
+                                  </div>
+                    <h4>Price: 350 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Saturday - Thursday - Friday</p>
+                    <p class="closed"><strong>Closed:</strong> Sunday - Monday - Wednesday</p>
+                    <a href="bookgames.html?name=Dream Park&price=350" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames12.webp" alt="Magic Land">
+                <div class="discount_games-info">
+                    <h3>Magic Land</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 250 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Friday - Saturday - Monday</p>
+                    <p class="closed"><strong>Closed:</strong> Tuesday - Wednesday - Thursday</p>
+                    <a href="bookgames.html?name=Magic Land&price=250" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames13.webp" alt="Adventure World">
+                <div class="discount_games-info">
+                    <h3>Adventure World</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 300 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Thursday - Friday - Saturday</p>
+                    <p class="closed"><strong>Closed:</strong> Sunday - Monday - Tuesday</p>
+                    <a href="bookgames.html?name=Adventure World&price=300" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames14.webp" alt="Oasis of Fun">
+                <div class="discount_games-info">
+                    <h3>Oasis of Fun</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 200 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Wednesday - Thursday - Friday</p>
+                    <p class="closed"><strong>Closed:</strong> Sunday - Monday - Tuesday</p>
+                    <a href="bookgames.html?name=Oasis of Fun&price=200" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames15.webp" alt="Fantasy Island">
+                <div class="discount_games-info">
+                    <h3>Fantasy Island</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 400 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Saturday - Sunday - Monday</p>
+                    <p class="closed"><strong>Closed:</strong> Tuesday - Wednesday - Thursday</p>
+                    <a href="bookgames.html?name=Fantasy Island&price=400" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames16.webp" alt="Aqua Park">
+                <div class="discount_games-info">
+                    <h3>Aqua Park</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 280 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Friday - Saturday - Sunday</p>
+                    <p class="closed"><strong>Closed:</strong> Monday - Tuesday - Wednesday</p>
+                    <a href="bookgames.html?name=Aqua Park&price=280" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames1.7webp.jpeg" alt="City Stars">
+                <div class="discount_games-info">
+                    <h3>City Stars</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 150 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Saturday - Sunday - Monday</p>
+                    <p class="closed"><strong>Closed:</strong> Tuesday - Wednesday - Thursday</p>
+                    <a href="bookgames.html?name=Butterfly Garden&price=180" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames18.webp" alt="Water Theme Park">
+                <div class="discount_games-info">
+                    <h3>Water Theme Park</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 350 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Friday - Saturday - Sunday</p>
+                    <p class="closed"><strong>Closed:</strong> Monday - Tuesday - Wednesday</p>
+                    <a href="bookgames.html?name=Water Theme Park&price=320" class="book-now2" onclick="saveBookingInfo(this)">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="discount-card_games">
+                <img src="./img/imggames19.webp" alt="Laser World">
+                <div class="discount_games-info">
+                    <h3>Laser World</h3>
+                    <div class="star-rating">
+                        <span class="star" data-index="1">&#9733;</span>
+                        <span class="star" data-index="2">&#9733;</span>
+                        <span class="star" data-index="3">&#9733;</span>
+                        <span class="star" data-index="4">&#9733;</span>
+                        <span class="star" data-index="5">&#9733;</span>
+                    </div>
+                    <h4>Price: 180 EGP</h4>
+                    <p class="working-hours"><strong>Working hours:</strong> Saturday - Sunday - Thursday</p>
+                    <p class="closed"><strong>Closed:</strong> Monday - Tuesday - Wednesday</p>
+                    <a href="bookgames.html?name=Laser World&price=180" class="book-now2">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="./js/java.js"></script>
+</body>
+</html>

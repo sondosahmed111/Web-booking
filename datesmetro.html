@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metro Booking</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/dateandbookmetro.css">
+
+</head>
+<body>
+  <div class="train-body"> 
+<h1>Metro Booking System</h1>
+<div class="input">
+  <div>
+    <label for="metroLine">Line:</label>
+    <select id="metroLine" onchange="showStations(); filterMetros();">
+      <option value="">Choose Line</option>
+      <option value="line1">Line 1</option>
+      <option value="line2">Line 2</option>
+      <option value="line3">Line 3</option>
+    </select>
+  </div>
+  <div>
+    <label for="station1">From:</label>
+    <select id="station1"></select>
+  </div>
+  <div>
+    <label for="station2">To:</label>
+    <select id="station2"></select>
+  </div>
+  <button onclick="filterMetros()">Search</button>
+</div>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Metro Number</th>
+        <th>From</th>
+        <th>To</th>
+        <th>Time</th>
+        <th>Airline</th>
+        <th>Gate</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="metrosBody"></tbody>
+  </table>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+<script src="./js/book.js"></script>
+
+</body>
+</html>

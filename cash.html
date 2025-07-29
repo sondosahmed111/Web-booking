@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Network and Enter Details</title>
+  <link rel="stylesheet" href="./css/cash.css">
+</head>
+<body>
+  <div class="container" id="network-container">
+    <form id="details-form" action="cash.php" method="post">
+      <h1>Choose Your Network</h1>
+
+      <label for="network">Select Network:</label>
+      <select id="network" name="network">
+        <option value="vodafone">Vodafone</option>
+        <option value="etisalat">Etisalat</option>
+        <option value="orange">Orange</option>
+        <option value="we">We</option>
+      </select>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{11}" placeholder="Enter 11-digit phone number">
+
+      <div class="button-group">
+        <button type="submit">Submit</button>
+        <button style="background: #b82927;" type="button" onclick="goToIndex()">Back</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function goToIndex() {
+      window.location.href = "hotel.html";
+    }
+  </script>
+
+  <script src="./js/cash.js"></script>  
+</body>
+</html>

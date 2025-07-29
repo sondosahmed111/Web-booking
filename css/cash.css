@@ -1,0 +1,137 @@
+ body {
+            font-family: Arial, sans-serif;
+            background: url(../img/visa5.jpg) no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.273);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            opacity: 1;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            margin: 10px 0 5px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-group button {
+            width: 48%;
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation for the network container */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        #network-container {
+            animation: slideIn 1s ease-in-out;
+        }
+        span{
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(36, 36, 193);
+        }
+        @media (max-width: 768px) {
+    body {
+        padding: 20px;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}

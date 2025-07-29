@@ -1,0 +1,689 @@
+body {
+  margin: 0px;
+  padding: 0PX;
+}
+
+span, a {
+  display: inline-block;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.scrolled {
+  background-color: #465c7e !important;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  position: relative;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link.active {
+  color: blue !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+
+/* عندما تكون القائمة في الشاشات الصغيرة */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none !important;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    z-index: 1000;
+    padding-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navbar-nav {
+    flex-direction: column; 
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    text-align: left; 
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #519bf0;
+  }
+
+  .navbar-toggler {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container.text-center {
+    padding-top: 120px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container.text-center {
+    padding-top: 100px;
+    font-size: 12px;
+  }
+}
+/* background */
+.background {
+  height: 100vh;
+}
+ .background h1 {
+    COLOR: WHITE;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+.background p {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+/* الأساسي */
+.input-group {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+.input-group .form-control {
+  max-width: 600px;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.input-group .button {
+  background-color: #007bff;
+  color: white;
+  height: 40px;
+  width: auto;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .input-group .form-control {
+    max-width: 200px;  
+    padding: 5px; 
+  }
+
+  .input-group .button {
+    height: 35px; 
+    width: auto;
+    padding: 8px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .input-group .form-control {
+    max-width: 150px; 
+    padding: 2px;  
+  }
+
+  .input-group .button {
+    height: 30px;  
+    padding: 6px; 
+  }
+}
+
+/* photo */
+/* 🌟 حركات الكروت العلوية (Zoom, Swing, Flip) */
+@keyframes zoomEffect {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes swingEffect {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0); }
+}
+
+@keyframes flipEffect {
+  0% { transform: perspective(1000px) rotateY(0); }
+  50% { transform: perspective(1000px) rotateY(180deg); }
+  100% { transform: perspective(1000px) rotateY(0); }
+}
+
+/* تطبيق الحركات على الكروت العلوية */
+.custom-card:not(.row.mt-4 .custom-card):nth-last-child(3) {
+  animation: zoomEffect 3s ease-in-out infinite;
+}
+
+.custom-card:not(.row.mt-4 .custom-card):nth-last-child(2) {
+  animation: swingEffect 3.5s ease-in-out infinite;
+}
+
+/* تعديل حركات flip بحيث تتقلب مره ثم تثبت */
+.custom-card:not(.row.mt-4 .custom-card):nth-last-child(1) {
+  animation: flipEffect 4s ease-in-out 2;
+  animation-fill-mode: forwards; /* لتثبيت الكرت في الوضع النهائي */
+  animation-iteration-count:5; /* التكرار مرتين فقط */
+}
+
+/* تطبيق PowerMove على الكروت السفلية فقط */
+.row.mt-4 .custom-card {
+  animation: powerMove 4s ease-in-out infinite;
+}
+.card{
+  background-color: rgba(0, 0, 0, 0.841);
+  color: white;
+}
+/* تأثير الهوفر لكل الكروت */
+.custom-card {
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+
+}
+
+.custom-card:hover {
+  transform: scale(1.09);
+  box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* payment */
+.service-box {
+    border: 2px solid #ddd; 
+   padding: 20px;
+   border-radius: 10px;
+   background: white;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   color: black;
+  }
+  
+  .service-box .icon{
+   font-size: 50px;
+   color: gray;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto 10px;
+  
+  }
+  
+  .content-train{
+    padding: 30px;
+    color: #007bff;
+  }
+
+
+/* end payment */
+
+/* Portfolio */
+section.portfolio-section {
+	padding: 100px 0;
+}
+
+section#Works {
+	background-color: var(--home-color);
+}
+section#Works .head h3 {
+	color: var(--primary-color);
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 44px;
+	position: relative;
+	z-index: 4;
+	display: inline-block;
+}
+.port-item {
+	position: relative;
+}
+.port-item img {
+	width: 100%;
+}
+.port-item h3 {
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--primary-color); 
+	margin-bottom: 15px;
+}
+.port-item img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 15px;
+}
+
+.port-item:hover img {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+.port-icon li {
+	background-color: var(--dark-color);
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 5px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.port-icon a {
+	color: var(--home-color); 
+}
+.port-icon li:hover a {
+	color: var(--dark-color);
+}
+.port-icon li:hover {
+	border: 1px solid var(--dark-color);
+	background-color: var(--home-color); 
+}
+.nav .nav-link {
+	color: var(--group-color); 
+	font-weight: 700;
+}
+.nav .nav-link:hover {
+	color: var(--group-color)
+  ;
+}
+
+
+
+/* contact */
+
+.social-box i {
+  padding: 6px;
+  color: black;
+
+
+}
+.social-box a span {
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  margin: 10px;   
+  background-color: transparent;
+}
+.social-box a span :hover{
+ border-radius: 50px;
+  background-color: #3094ff;
+}
+.contact{
+    padding: 30px;
+
+}
+.text {
+    color:#0056b3
+    ;
+}
+/* end contact */
+
+
+
+
+/* register*/
+
+#loginBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    background:linear-gradient(#007bff,#0056b3);
+    color: white;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+button:hover {
+    background-color:#007bff; 
+}
+button,
+.link-button {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.link-button:hover {
+    background-color: #0078ff;
+}
+
+
+.login-btn{
+    border-radius: 15px;
+    padding: 10px;
+}
+/* end register */
+/* زرار ثابت في أسفل الصفحة   */
+.scroll-button {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  width: 50px;  /* عرض الزرار */
+  height: 50px;  /* ارتفاع الزرار */
+  border-radius: 50%;  /* جعله دائري */
+  font-size: 15px;  /* حجم الأيقونة */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.scroll-button:hover {
+  transform: scale(1.1); 
+}
+html {
+  scroll-behavior: smooth;
+}
+/* stats */
+.stats-section {
+  background-color: rgba(0, 123, 255, 0.1); 
+  padding: 40px 0;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.stats-card {
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333; 
+}
+
+.stats-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stats-title {
+  font-size: 18px;
+  color: #333; 
+  margin-bottom: 15px;
+}
+
+.stats-number {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333; 
+}
+
+@keyframes countUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+/* company */
+.carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.partner-card {
+  flex: 0 0 auto;
+  width: 160px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: scale(1.05);
+}
+
+.partner-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.partner-card p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Responsive for cards & layout */
+@media (max-width: 768px) {
+  .custom-card {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-card {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+
+  .carousel-track {
+    animation-duration: 60s; /* تبطئة السلايدر على الموبايل */
+  }
+
+  .partner-card {
+    width: 120px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+/* Responsive text size */
+@media (max-width: 576px) {
+  .background h1 {
+    font-size: 1.8rem;
+  }
+
+  .background p {
+    font-size: 14px;
+  }
+
+  .gear-text {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .stats-number {
+    font-size: 24px;
+  }
+
+  .stats-title {
+    font-size: 16px;
+  }
+
+  .partner-card p {
+    font-size: 13px;
+  }
+}
+
+/* Dropdown responsive fix */
+@media (max-width: 991px) {
+  #dropdown-menu {
+    position: static !important;
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-item.dropdown:hover #dropdown-menu {
+    display: block;
+  }
+
+  #dropdown-menu .dropdown-item {
+    color: white;
+    padding: 10px;
+  }
+
+  #dropdown-menu .dropdown-item:hover {
+    background-color: #519bf0;
+    color: white;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    width: 100%;
+  }
+}

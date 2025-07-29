@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booking</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <script src="https://kit.fontawesome.com/your_kit.js" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<!-- CSS only -->
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+		</head>
+	<body>
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: transparent;">
+  <div class="container">
+    <!--  start :logo -->
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo_no_white.png" alt="Logo" width="120">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- end : logo  -->
+
+<!-- start : link  -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="train.html">Train</a></li>
+        <li class="nav-item"><a class="nav-link" href="background-metro.html">Metro</a></li>
+        <li class="nav-item"><a class="nav-link" href="flight.html">Flight</a></li>
+        <li class="nav-item"><a class="nav-link" href="background-hotel.html">Hotel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="activite-btn" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">Activite</a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="activite-btn">
+            <li><a class="dropdown-item" href="background-stage.html">Stage</a></li>
+            <li><a class="dropdown-item" href="background-cinema.html">Cinema</a></li>
+            <li><a class="dropdown-item" href="background-games.html">Games</a></li>
+            <li><a class="dropdown-item" href="background-match.html">Matches</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end : link  -->
+
+<!-- ===== Background Section ===== -->
+<div class="position-relative" style="height: 100vh;">
+  <img id="background-image" src="./img/im.jpg" alt="Background Image"
+       class="w-100 h-100 position-absolute top-0 start-0" 
+       style="object-fit: cover; z-index: -1;">
+  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background-color: rgba(0, 0, 0, 0.5);"></div>
+
+  <div class="container text-center position-relative d-flex flex-column justify-content-center align-items-center h-100"
+       style="z-index: 1;">
+    <p class="text-white fs-4 mb-2">Welcome to</p>
+    <h1 class="text-white display-4 fw-bold mb-3">The best booking site ever.</h1>
+    <p class="text-white fs-5">Discover dreamy Hotel, Trains, Metro, Flight <span>&</span> more...</p>
+  </div>
+</div>
+
+<!-- about me -->
+<div class="container mt-5" id="About"> 
+  <div class="content-train text-center">
+    <h2 style="color: #1a518d;">About Us</h2>
+    <p style="color: #215fa2;">Rate our site and explore amazing booking offers!</p>
+  </div>
+
+  <div class="row p-4 rounded shadow align-items-start">
+    <!-- الصورة -->
+    <div class="col-md-5 profile-card">
+      <div class="d-flex justify-content-start">
+        <div class="profile-imgg" style="margin-left: -30px;"> <!-- الصورة تتحرك شمال -->
+          <img src="./img/travel booking.webp" alt="Profile Picture" width="100%" style="border-radius: 10px;">
+        </div>
+      </div>
+
+      <!-- البارات -->
+      <div class="mt-4 ps-3"> <!-- padding start علشان تبعد الكلام عن الصورة -->
+        <h5>Language</h5>
+
+        <div class="mb-2">
+          <span class="skill-name">TRAIN <span class="percentage">85%</span></span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <span class="skill-name">FLIGHT <span class="percentage">75%</span></span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <span class="skill-name">METRO <span class="percentage">50%</span></span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 50%;"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <span class="skill-name">HOTEL <span class="percentage">70%</span></span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%;"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <span class="skill-name">CINEMA <span class="percentage">30%</span></span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 30%;"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <span class="skill-name">STAGE <span class="percentage">90%</span></span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="mb-2">
+          <span class="skill-name">GAMES <span class="percentage">40%</span></span>
+          <div class="progress">
+            <div class="progress-bar" style="width: 40%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكلام -->
+    <div class="col-md-7 p-4">
+      <h3 class="text-secondly" style="color: #007bff;">Booking Online</h3>
+      <p>Unlike flight reservations, hotel booking is ranked among last-minute or pre-planned options. Every choice is available for a local holiday.</p>
+      <p>Hotels provide the best prices, negotiating personally with accommodation owners to ensure the best deals.</p>
+      <p>Book now and pay later, allowing you to hold your selected room while finalizing your trip.</p>
+      <p>Easy payment options and customer service availability throughout the week make it the best hotel booking site in your area.</p>
+
+      <h3>Why book with us?</h3>
+      <ul>
+        <li>Up to 70% discount on flight bookings.</li>
+        <li>Up to 30% discount on hotel bookings.</li>
+        <li>Multi-language customer service available 24/7.</li>
+        <li>Secure and easy payment options.</li>
+        <li>Various payment methods available.</li>
+        <li>Fast and smooth booking experience.</li>
+        <li>Exciting offers and cash refunds.</li>
+        <li>Exclusive loyalty program.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- photo -->
+<div class="container mt-4">
+<div class="container">
+	<div class="content-train text-center">
+		<h2 style="color: #465c7e;">OUR SERIVES</h2>
+		<p style="color: #465c7e;">Our website includes.</p>
+	</div>
+
+<div class="row">
+	<div class="col-md-2 sm-12">
+		<div class="custom-card card p-2">
+			<img style= height:118px ; src="./img/metro4.jpg" alt="Beach View" class="card-img-top">
+			<div class="card-body">
+				<h6 class="card-title text-center">METRO</h6>
+				<p class="card-text">The metro is a fast and affordable way to travel around cities,
+           offering a reliable alternative to traffic.</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2 sm-12">
+		<div class="custom-card card p-2">
+			<img src="./img/im1.jpg" alt="Historical Museum" class="card-img-top">
+			<div class="card-body">
+				<h6 class="card-title text-center">FLIGHT</h6>
+				<p class="card-text">Airplanes have revolutionized long-distance travel, 
+          making it easier to visit distant destinations.</p>
+			</div>
+		</div> 
+	</div>
+
+	<div class="col-md-2 sm-12">
+		<div class="custom-card card p-2">
+			<img src="./img/mrah.jpg" alt="Vintage Train Interior" class="card-img-top">
+			<div class="card-body">
+				<h6 class="card-title text-center" >GAMES</h6>
+				<p class="card-text">Amusement parks are thrilling destinations offering 
+          a variety of rides and attractions </p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2 sm-12">
+		<div class="custom-card card p-2"> 
+			<img style="height: 136px;" src="./img/stadium7.jpg" alt="Classic Train Ride" class="card-img-top">
+			<div class="card-body">
+				<h6 class="card-title text-center">MATCH</h6>
+				<p class="card-text">A match is an exciting event where athletes compete in various sports,</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2 sm-12">
+		<div class="custom-card card p-2">
+			<img src="./img/hotel1.jpg" alt="Mystical Towers" class="card-img-top">
+			<div class="card-body">
+				<h6 class="card-title text-center">HOTEL</h6>
+				<p class="card-text">Hotels offer travelers a place to rest and enjoy essential amenities during their stay. They vary in luxury</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2 sm-12">
+		<div class="custom-card card p-2">
+			<img src="./img/train6.jpeg" alt="Enchanted Train" class="card-img-top">
+			<div class="card-body">
+				<h6 class="card-title text-center">TRAIN</h6>
+				<p class="card-text">Trains provide a comfortable and scenic way to travel between cities or regions. Known for efficiency</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row mt-4 sm-12">
+	<div class="col-md-4">
+		<div class="custom-card card p-2">
+			<img src="./img/cinema2.jpeg"alt="Tower of Wonders" class="card-img-top"  height="380px">
+			<div class="card-body">
+				<h6 class="card-title text-center">STAGE</h6>
+				<p class="card-text">A breathtaking tower that stands symbol ancient .</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 sm-12">
+		<div class="custom-card card p-2">
+			<img src="./img/games1.jpeg" alt="Mystic Castle" class="card-img-top" height="380px">
+			<div class="card-body">
+				<h6 class="card-title text-center">GAMES</h6>
+				<p class="card-text">A mystical castle hidden within kjk of history.</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 sm-12">
+		<div class="custom-card card p-2">
+			<img src="./img/cinema1.jpeg" class="card-img-top" height="380px">
+			<div class="card-body">
+				<h6 class="card-title text-center">CINEMA</h6>
+				<p class="card-text">An ancient fortress that tells the tales civilizations.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+</div> 
+
+<!-- payment -->
+<div class="container">
+<div class="content-train text-center">
+	<h2 style="color:#115daf ;">PAYMENT</h2>
+	<p style="color: #113e6e;">Payment type.</p>
+</div>
+<div class="row g-4">
+<div class="col-md-4">
+	<div class="card service-box">
+		<div class="card-body">
+			<div class="icon">
+				<i class="fas fa-credit-card text-primary icon"></i>
+			</div>
+			<h5 class="card-title">Credit Card</h5>
+			<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="card service-box">
+		<div class="card-body">
+			<div class="icon">
+				<i class="fas fa-money-bill-transfer text-success icon"></i>
+			</div>
+			<h5 class="card-title">Bank transfer</h5>
+			<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="card service-box">
+		<div class="card-body">
+			<div class="icon">
+		<i class="fa fa-mobile icon"></i>
+
+			</div>
+			<h5 class="card-title">Vodafone cash</h5>
+			<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+		</div>
+	</div>
+</div>
+</div></div>
+
+<!-- protifoil -->
+
+<section id="Works" class="portfolio-section text-center pb-70">
+	<div class="container">
+	  <div class="head mb-5 f-m text-center">
+		<h3 style="color: #2b639f;">Our website</h3>
+		<p style="color: #235489;">Lorem ipsum dolor sit amet.</p>
+	  </div>
+  
+	  <ul class="nav nav-underline gap-5 justify-content-center mb-5" id="pills-tab" role="tablist">
+		<li class="nav-item" role="presentation">
+		  <button class="nav-link active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All"
+			type="button" role="tab" aria-controls="pills-All" aria-selected="true">
+			Flight&Hotel		  </button>
+		</li>
+		<li class="nav-item" role="presentation">
+		  <button class="nav-link" id="pills-Brand-tab" data-bs-toggle="pill" data-bs-target="#pills-Brand" type="button"
+			role="tab" aria-controls="pills-Brand" aria-selected="false">
+			
+			Train&metro
+
+		  </button>
+		</li>
+		<li class="nav-item" role="presentation">
+		  <button class="nav-link" id="pills-Design-tab" data-bs-toggle="pill" data-bs-target="#pills-Design"
+			type="button" role="tab" aria-controls="pills-Design" aria-selected="false">
+			Cinema&Stage
+		  </button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="pills-graphic-tab" data-bs-toggle="pill" data-bs-target="#pills-graphic"
+			  type="button" role="tab" aria-controls="pills-graphic" aria-selected="false">
+			  Match&games
+		   </button>
+		  </li>
+  
+	  </ul>
+  
+	  <div class="tab-content" id="pills-tabContent">
+		<!-- All Tab -->
+		<div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
+		  <div class="row g-3">
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="flight.html"><img src="./img/flightt.jpeg" alt="charge"  height="600px;"/></a>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="background-hotel.html"><img src="./img/back-hotelly.jpeg" alt="book"  height="600px;" /></a>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+			<a href="flight.html"><img src="./img/flightttt.webp" alt="board"  height="600px;" /></a>	
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		<!-- Brand Tab -->
+		<div class="tab-pane fade" id="pills-Brand" role="tabpanel" aria-labelledby="pills-Brand-tab" tabindex="0">
+		  <div class="row g-3">
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+			<a href="train.html"><img src="./img/trainn.jpeg" alt="Bulb"  height="600px;"/></a>	
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="background-metro.html"><img src="./img/trainnn.jpeg" alt="Bulb" height="600px;" /></a>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="train.html"><img src="./img/trainnnn.jpeg" alt="pen"  height="600px;"></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		<!-- Games Tab -->
+		<div class="tab-pane fade" id="pills-Design" role="tabpanel" aria-labelledby="pills-Design-tab" tabindex="0">
+		  <div class="row g-2">
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="background-cinema.html"><img src="./img/cinema111.webp" alt="book" /></a>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="background-stage.html"><img src="./img/cinemaa113.webp" alt="book" /></a>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="background-cinema.html"><img src="./img/cinema112.jpeg" alt="ruler"/></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		<!-- Matches Tab -->
+		<div class="tab-pane fade" id="pills-graphic" role="tabpanel" aria-labelledby="pills-graphic-tab" tabindex="0">
+		  <div class="row g-2">
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+			<a href="background-games.html"><img src="./img/gamesss.jpeg" alt="charge" /></a>	
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="background-match.html"><img src="./img/matchh.jpeg" /></a>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="port-item f-m">
+				<a href="background-games.html"><img src="./img/gamessss.jpeg" alt="ruler" /></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+	  </div>
+	</div>
+  </section>
+  
+<!-- cards -->
+<section class="stats-section">
+	<h2 class="section-title" style="color: #194c83; text-align: center;">Site Statistics</h2>
+  
+	<div class="stats-container">
+	  <!-- الكارت الأول -->
+	  <div class="stats-card">
+		<p class="stats-title">Number of Bookings</p>
+		<p class="stats-number" id="bookingCount">0</p>
+	  </div>
+  
+	  <!-- الكارت الثاني -->
+	  <div class="stats-card">
+		<p class="stats-title">Website Visitors</p>
+		<p class="stats-number" id="visitorCount">0</p>
+	  </div>
+  
+	  <!-- الكارت الثالث -->
+	  <div class="stats-card">
+		<p class="stats-title">Number of Subscriptions</p>
+		<p class="stats-number" id="subscriptionCount">0</p>
+	  </div>
+	</div>
+  </section>
+  
+  
+
+
+
+<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container shadow-lg p-4">
+			<div class="row">
+				<div class="col-md-6">
+					
+					<h4 class="text" style="color: #1a5798;">Send Message Us</h4>
+<form action="send_message.php" method="POST">
+  <div class="mb-3">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+  <div class="mb-3">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+  <div class="mb-3">
+    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+  </div>
+  <div class="mb-3">
+    <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary w-40">Send Message</button>
+</form>
+
+					 
+<div id="successMessage" style="display:none; margin-top:15px;" class="alert alert-success">
+  ✅ تم إرسال الرسالة بنجاح!
+</div>
+<script>
+  // لو الرسالة موجودة، اختفي بعد 5 ثواني
+  window.addEventListener("DOMContentLoaded", () => {
+    const successMsg = document.getElementById("successMessage");
+    if (successMsg) {
+      setTimeout(() => {
+        successMsg.style.display = "none";
+      }, 5000); // 5000 ملي ثانية = 5 ثواني
+    }
+  });
+</script>
+
+
+					
+				</div>
+				<div class="col-md-6">
+					<h4 class="text" style="color: #15569c;">Get in Touch</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+					<p><i class=" text-primary fas fa-map-marker-alt"></i> 329 WASHINGTON ST BOSTON, MA 02108</p>
+					<p><i class = " text-primary fas fa-phone"></i> (617) 557-0089</p>
+					<p><i class=" text-primary fas fa-envelope"></i> contact@example.com</p>
+
+						<div class="social-box">
+
+							<a href="https://www.facebook.com/" target="_blank">
+							   <span> <i class="fab fa-facebook" style="color: rgb(6, 6, 237); font-size: 30px; "></i></span>
+
+							   <a href="https://www.instagram.com/" target="_blank">
+							 <span> <i class="fab fa-instagram" style="color: crimson; font-size: 30px;"></i></span>
+							 <a href="https://www.linkedin.com/" target="_blank">
+								<span> <i class="fab fa-linkedin" style="color:blue; font-size: 30px;"></i></span>
+							 </a> 
+
+							 <a href="https://www.youtube.com/" target="_blank">
+							   <span><i class="fab fa-youtube" style="color:red ; font-size: 30px;"></i></span>
+							</a>
+							<a href="https://www.twitter.com/" target="_blank">
+							   <span> <i class="fab fa-twitter" style="color:blue;font-size: 30px ;"></i></span>
+							</a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	 </div>
+	 </div>
+
+
+
+<!-- company -->
+<section class="partners-section">
+	<div class="container">
+	  <h2 class="section-title" style="color: #195ca3;">Companies contracted with us</h2>
+  
+	  <div class="carousel-wrapper">
+		<div class="carousel-track">
+		  <!-- الكروت -->
+		  <div class="partner-card"><img src="./img/amazone.jpg" alt="Amazon"><p>Amazon</p></div>
+		  <div class="partner-card"><img src="./img/google.jpg" alt="Google"><p>Google</p></div>
+		  <div class="partner-card"><img src="./img/net.jpg" alt="Netflix"><p>Netflix</p></div>
+		  <div class="partner-card"><img src="./img/vodafone.jpg" alt="Visa"><p>Visa</p></div>
+		  <div class="partner-card"><img src="./img/book.jpg" alt="Booking.com"><p>Booking.com</p></div>
+		  <div class="partner-card"><img src="./img/uber.jpg" alt="Uber"><p>Uber</p></div>
+		  <div class="partner-card"><img src="./img/flight.jpg" alt="Qatar Airways"><p>Flight</p></div>
+		  <div class="partner-card"><img src="./img/match.logo.jpg" alt="Match"><p>Match</p></div>
+		  <div class="partner-card"><img src="./img/train.jpg" alt="Amtrak"><p>Amtrak</p></div>
+		  <div class="partner-card"><img src="./img/hotel.jpg" alt="Hilton"><p>Hilton Hotels</p></div>
+  
+		  <!-- تكرار للحركة -->
+		  <div class="partner-card"><img src="./img/amazone.jpg" alt="Amazon"><p>Amazon</p></div>
+		  <div class="partner-card"><img src="./img/google.jpg" alt="Google"><p>Google</p></div>
+		  <div class="partner-card"><img src="./img/net.jpg" alt="Netflix"><p>Netflix</p></div>
+		  <div class="partner-card"><img src="./img/vodafone.jpg" alt="Visa"><p>Visa</p></div>
+		  <div class="partner-card"><img src="./img/book.jpg" alt="Booking.com"><p>Booking.com</p></div>
+		  <div class="partner-card"><img src="./img/uber.jpg" alt="Uber"><p>Uber</p></div>
+		  <div class="partner-card"><img src="./img/flight.jpg" alt="Qatar Airways"><p>Flight</p></div>
+		  <div class="partner-card"><img src="./img/match.logo.jpg" alt="Match"><p>Match</p></div>
+		  <div class="partner-card"><img src="./img/train.jpg" alt="Amtrak"><p>Amtrak</p></div>
+		  <div class="partner-card"><img src="./img/hotel.jpg" alt="Hilton"><p>Hilton Hotels</p></div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container-fluid px-5"> 
+      <div class="row">
+          
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">About Us</h5>
+          <p>We provide the best cinema experience with luxury seating, immersive sound, and up-to-date movie selections. Join us for a night to remember!</p>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Movies</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Offers</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <a href="https://www.facebook.com" target="_blank" class="text-light me-3 social-link"> 
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="text-light me-3 social-link">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="text-light me-3 social-link">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" class="text-light social-link">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+            </div>
+  
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 <span style="color: #007bff;">HOME</span> All Rights Reserved.</p>
+      </div>
+	  <!-- register -->
+
+<!-- Login يظهر لو مش مسجل دخول -->
+<a href="login.html" id="loginLink"><button id="loginBtn">Login</button></a>
+
+<!-- Logout يظهر لو مسجل دخول -->
+<button id="logoutBtn" style="display:none;">Logout</button>
+
+<p id="welcomeMsg"></p>
+	  <!-- register -->
+
+
+<!--  scroll-->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/index.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('./img/payment.jpg') no-repeat center center/cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .payment-container {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 22px;
+            color: white;
+        }
+
+        .payment-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .method {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 8px;
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .method:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: white;
+        }
+
+        .method input {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+
+        .method label {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .buttons {
+            display: block;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #007BFF, #0056b3);
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+            margin: 20px auto 0 auto;
+            width: fit-content;
+            animation: fadeIn 1s ease-in-out, pulse 1.5s infinite;
+            text-decoration: none;
+        }
+
+        .buttons:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #0056b3, #007BFF);
+            box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.6);
+        }
+
+        .buttons:active {
+            transform: scale(0.95);
+            box-shadow: 0px 3px 10px rgba(0, 123, 255, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="payment-container">
+        <h2 style="color: #007BFF;">Select Payment Method</h2>
+        <form action="book-train.html" method="post" class="payment-methods">
+            <div class="method">
+                <input type="radio" name="payment" value="visa" required>
+                <label>Credit Card (Visa / MasterCard)</label>
+            </div>
+            <div class="method">
+                <input type="radio" name="payment" value="vodafone_cash">
+                <label>Vodafone Cash</label>
+            </div>
+            <div class="method">
+                <input type="radio" name="payment" value="orange_cash">
+                <label>Orange Cash</label>
+            </div>
+            <div class="method">
+                <input type="radio" name="payment" value="etisalat_cash">
+                <label>Etisalat Cash</label>
+            </div>
+            <div class="method">
+                <input type="radio" name="payment" value="cash_on_delivery">
+                <label>Cash on Delivery</label>
+            </div>
+            <a href="book-train.html" class="buttons">Confirm Booking</a>
+        </form>
+    </div>
+</body>
+
+</html>
